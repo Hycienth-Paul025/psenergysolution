@@ -857,6 +857,10 @@ footer a:visited {
   gap: 10px;
 }
 
+.grid img{
+  width: 80vw;
+}
+
  .about img{
   width: 100%;
  }
@@ -1105,7 +1109,7 @@ footer a:visited {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 720px) /* smaller devices */ {
   html {
     font-size: 11px;
   }
@@ -1368,9 +1372,6 @@ font-size: 17px;
     font-size: 13px;
   }
 
-  address ion-icon {
-    color: red;
-  }
 
   .contact {
     font-size: 13px;
@@ -1569,7 +1570,7 @@ font-size: 17px;
     right: -100%;
     z-index: 10;
     width: 60%;
-    height: 42%;
+    height: 48%;
     border-radius: 5px;;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.445);
@@ -1607,7 +1608,7 @@ font-size: 17px;
   /* VIDEO AREA STARTS*/
 
   .background-image {
-    padding-bottom: 140px;
+    padding-bottom: 160px;
   }
 
   .background-image video {
@@ -1771,19 +1772,8 @@ font-size: 17px;
     font-weight: normal;
   }
 
-  body {
-    width: 100%;
-  }
-
   /* HEADING AREA STARTS*/
 
-  html {
-    font-size: 11px;
-  }
-
-  body {
-    width: 100%;
-  }
 
   /* NAV AREA STARTS*/
 
@@ -1817,15 +1807,11 @@ font-size: 17px;
   }
 
   .header-ul li a {
-    font-size: 25px;
+    font-size: 20px;
     left: -100px;
     top: 10px;
   }
 
-  .header-ul li a ion-icon {
-    font-size: 40px;
-    color: black;
-  }
 
   .open-menu-bar,
   .close-menu-bar {
@@ -1855,7 +1841,7 @@ font-size: 17px;
     right: -100%;
     z-index: 10;
     width: 60%;
-    height: 37%;
+    height: 55%;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.445);
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.253);
@@ -1936,7 +1922,7 @@ font-size: 17px;
   }
 
   .about {
-    padding: 15px 2px;
+    padding: 15px 15px;
     word-spacing: 5px;
     line-height: 2rem;
   }
