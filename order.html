@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+  <link rel="icon" href="img/logo-2.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <div class="background-blur"></div>
+
+  <div class="order-link">
+    <a href="index.html"><button>Go back <ion-icon name="home"></ion-icon></button></a>
+  </div>
+
+  <section>
+
+    <div class="contact-container">
+      <div class="contact-left">
+        <span>
+          <h2>Lighting the Path Forward</h2>
+          <p>
+            PAULO SOLAR ENERGY SOLUTION stands as a beacon of innovation, sustainability, and social impact. As the
+            world moves toward a greener future, companies like PAULO SOLAR are leading the charge, proving that
+            renewable energy is not just a viable alternative but the key to unlocking a brighter, more equitable future
+            for all.
+
+            Through its relentless commitment to powering communities, enhancing livelihoods, and protecting the
+            environment, PAULO SOLAR ENERGY SOLUTION is not just providing energy solutions—it is lighting the path to a
+            more sustainable and empowered world.
+
+            In the words of PAULO SOLAR’s founders: "The sun shines for everyone, and so should access to energy."
+            <br>
+            By installing solar systems in rural communities, PAULO SOLAR is bringing light where there was darkness.
+            Children can now study after sunset, businesses can operate longer, and healthcare facilities can offer more
+            reliable services. The company's solar installations are transforming lives by providing a sustainable and
+            consistent energy source, allowing communities to grow and develop.
+          </p>
+          
+        </span>
+      </div>
+
+      <form id="contactForm">
+
+        <h2>your details and order</h2>
+
+        <div class="contact-form">
+          <label for="name">Name</label>
+          <input name="user_name" type="text" placeholder="Enter your name" autocomplete="off" id="name">
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="contact-form">
+          <label for="tel">Phone</label>
+          <input name="user_phone" type="tel" placeholder="+123 456 7890" id="phone" autocomplete="off">
+          <small class="error" id="phoneError"></small>
+        </div>
+
+        <div class="contact-form">
+          <label for="email">Email</label>
+          <input name="user_email" type="email" id="email" placeholder="Enter your email" autocomplete="off">
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="contact-form">
+          <label for="address">Addr.</label>
+          <input name="user_address" type="text" placeholder="Enter your exact address for delivery" id="address"
+            autocomplete="off">
+          <small class="error" id="addressError"></small>
+        </div>
+
+        <div class="package">
+          <input type="checkbox" name="solar_package" id="solar" value="solar">
+          <label for="solar">Solar</label>
+        </div>
+
+        <div class="package">
+          <div class="package-checked"></div>
+          <input type="checkbox" name="battery_package" id="battery" value="battery">
+          <label for="battery">Battery</label>
+        </div>
+
+        <div class="package">
+          <input type="checkbox" name="inverter_package" id="inverter" value="inverter">
+          <label for="inverter">Inverter</label>
+        </div>
+
+        <div class="package">
+          <input type="checkbox" name="energy_package" id="energy" value="energy">
+          <label for="energy">Energy Efficiency Lighting</label>
+        </div>
+
+        <div class="package">
+          <input type="checkbox" name="service_package" id="service" value="service">
+          <label for="service">Solar Service / Maintenance</label>
+        </div>
+
+        <button class="submit" type="submit">Submit <ion-icon name="send"></ion-icon></button>
+      </form>
+
+    </div>
+  </section>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+Examples of Screen Widths
+
+
+Device	                 Screen Width (px)	   Screen Height (px)
+
+iPhone SE(2020)	                375	                 667
+iPhone 13 Mini	                390	                 844
+Samsung Galaxy S23	            430	                 932
+iPad Mini (6th Gen)	            744	                 1133
+Google Pixel 6a	                412	                 915
