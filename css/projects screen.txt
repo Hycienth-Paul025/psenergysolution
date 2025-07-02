@@ -1,10 +1,9 @@
-Examples of Screen Widths
+Privacy Policy
 
 
-Device	                 Screen Width (px)	   Screen Height (px)
+At SolarBright, we value your privacy and are committed to protecting your personal information. We only collect data necessary to provide our services—such as your name, email, and contact details—and we never share it with third parties without your consent. Your information is stored securely, and you may contact us at any time to update or remove your data.
 
-iPhone SE(2020)	                375	                 667
-iPhone 13 Mini	                390	                 844
-Samsung Galaxy S23	            430	                 932
-iPad Mini (6th Gen)	            744	                 1133
-Google Pixel 6a	                412	                 915
+"We collect your name and email when you contact us. This information is only used to respond to your inquiries. We do not sell your data to anyone. You can contact us anytime to delete your information."
+
+#064e3b
+#059669

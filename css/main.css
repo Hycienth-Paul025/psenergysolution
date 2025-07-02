@@ -1,783 +1,712 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* ORDER LINK STARTS  */
 
 .order-link {
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    margin: 12px;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin: 12px;
 }
 
 .order-link button {
-    padding: 15px 20px;
-    font: 18px prompt;
-    font-weight: 600;
-    background-color: #333;
-    color: black;
-    border: 0;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: color 5s ease;
-    z-index: 1;
-}
-
-.order-link button::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(50deg, #ff0d0d, #ff7b00, #ffff00, #00ff00, #00ffff, #1270e2, #ddd, #8b00ff, #ff00ff);
-    background-size: 400% 400%;
-    z-index: -1;
-    filter: blur(15px);
-    animation: glow 5s infinite linear;
-}
-
-.order-link button :hover::before {
-    filter: blur(20px);
-}
-
-@keyframes glow {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+  padding: 15px 20px;
+  font: 18px prompt;
+  font-weight: 600;
+background: #008d52;
+  color: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
 }
 
 /* ORDER LINK ENDS  */
 
 .background-blur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 130vh;
-    background: linear-gradient(to top, #5780654d, #070000cc), url(../img/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: blur(4px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130vh;
+  background: linear-gradient(to top, #5780654d, #070000cc), url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(4px);
 }
-
 
 /*  CONTACT FORM START*/
 
 .contact-container {
-    max-width: 80%;
-    height: 800px;
-    margin: 0 auto;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 6px 10px 6px #030303ad;
-    position: relative;
-    top: 20px;
-    border-radius: 15px;
+  max-width: 80%;
+  height: 800px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 6px 10px 6px #030303ad;
+  position: relative;
+  top: 20px;
+  border-radius: 15px;
 }
 
 /* CONTACT LEFT STARRTS */
 
 .contact-left {
-    display: flex;
-    height: 800px;
-    width: 38vw;
+  display: flex;
+  height: 800px;
+  width: 38vw;
 }
 
 .contact-left span {
-    color: #000;
-    background: linear-gradient(transparent, #8a9fd89a, #8a9fd8), url(../img/bg-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 15px 0 0 15px;
+  color: #000;
+  background: linear-gradient(transparent, #8a9fd89a, #8a9fd8),
+    url(../img/bg-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px 0 0 15px;
 }
 
 .contact-left span h2 {
-    font: 30px prompt;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    position: relative;
-    top: 100px;
-    text-align: center;
-    color: #df3627;
+  font: 30px prompt;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  color: #df3627;
 }
 
 .contact-left span p {
-    text-align: justify;
-    position: relative;
-    top: 170px;
-    height: 100px;
-    font: 15px 'cabin';
-    padding: 0 10px;
-    line-height: 25px;
-    color: #141313;
+  text-align: justify;
+  position: relative;
+  top: 170px;
+  height: 100px;
+  font: 15px "cabin";
+  padding: 0 10px;
+  line-height: 25px;
+  color: #141313;
 }
 
 /* CONTACT LEFT ENDS */
 
 form {
-    padding: 20px;
-    border-radius: 0 8px 8px 0;
-    width: 59%;
-    height: 760px;
-    background-color: #040227;
+  padding: 20px;
+  border-radius: 0 8px 8px 0;
+  width: 59%;
+  height: 760px;
+  background-color: #040227;
 }
 
 h2 {
-    text-align: center;
-    text-transform: capitalize;
-    font: 25px prompt;
-    font-weight: 600;
-    position: relative;
-    top: -35px;
-    color: whitesmoke;
+  text-align: center;
+  text-transform: capitalize;
+  font: 25px prompt;
+  font-weight: 600;
+  position: relative;
+  top: -35px;
+  color: whitesmoke;
 }
 
 .contact-form {
-    margin-bottom: 15px;
-    position: relative;
-    top: -30px;
+  margin-bottom: 15px;
+  position: relative;
+  top: -30px;
 }
 
 label {
-    font: 16px prompt;
-    font-weight: 600;
-    color: #333;
-    display: block;
-    margin-bottom: 5px;
-    color: whitesmoke;
+  font: 16px prompt;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  color: whitesmoke;
 }
 
 .contact-form input {
-    width: 90%;
-    padding: 10px;
-    border: transparent;
-    border-bottom: 2px solid #01f799;
-    font: 17px Arial;
-    outline: none;
-    color: white;
-    background-color: transparent;
+  width: 90%;
+  padding: 10px;
+  border: transparent;
+  border-bottom: 2px solid #01f799;
+  font: 17px Arial;
+  outline: none;
+  color: white;
+  background-color: transparent;
 }
 
 ::placeholder {
-    color: #06f3ac;
-    text-align: center;
+  color: #06f3ac;
+  text-align: center;
 }
 
 input.invalid {
-    border-color: red;
+  border-color: red;
 }
 
 input.valid {
-    border-color: green;
+  border-color: green;
 }
 
 small.error {
-    color: red;
-    margin-bottom: -10px;
-    font: 16px cabin;
-    display: none;
+  color: red;
+  margin-bottom: -10px;
+  font: 16px cabin;
+  display: none;
 }
 
-
 .package label {
-    display: block;
-    padding-left: 25px;
+  display: block;
+  padding-left: 25px;
 }
 
 .package input {
-    position: relative;
-    top: 22px;
+  position: relative;
+  top: 22px;
 }
 
 .submit {
-    width: 100%;
-    padding: 10px;
-    margin-top: 15px;
-    background-color: #007242;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font: 18px cabin;
-    letter-spacing: 2px;
-    font-weight: 600;
-    cursor: pointer;
-    bottom: 0;
-    transition: .75s ease;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #007242;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font: 18px cabin;
+  letter-spacing: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  bottom: 0;
+  transition: 0.75s ease;
 }
 
 .submit:hover {
-    background-color: #008d52;
+  background-color: #008d52;
 }
 
 /*  CONTACT FORM ENDS*/
 
-
 /* TOASTER STARTS */
 .main-toast {
-    background-color: #000429;
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
+  background-color: #000429;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
 
 main ion-icon {
-    margin-left: 140px;
-    font-size: 200px;
-    text-align: center;
-    color: #2bff00;
+  margin-left: 140px;
+  font-size: 200px;
+  text-align: center;
+  color: #2bff00;
 }
 
 main .toast {
-    font: 30px prompt;
-    color: #2bff00;
-    font-weight: 500;
-    margin-bottom: -40px;
+  font: 30px prompt;
+  color: #2bff00;
+  font-weight: 500;
+  margin-bottom: -40px;
 }
 
 .notify,
 .notice {
-    display: flex;
-    justify-content: center;
-    font: 19px arial;
-    color: #ddd;
-    font-weight: 500;
-    padding: 6px 0;
+  display: flex;
+  justify-content: center;
+  font: 19px arial;
+  color: #ddd;
+  font-weight: 500;
+  padding: 6px 0;
 }
 
 .go-back-btn {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
 .go-back-btn button {
-    background-color: transparent;
-    font-weight: 800;
-    border: 0;
-    color: #009dff;
-    font-size: 15px;
-    font-family: cabin;
-    cursor: pointer;
-    transition: .5s ease-in-out;
-}   
+  background-color: transparent;
+  font-weight: 800;
+  border: 0;
+  color: #009dff;
+  font-size: 15px;
+  font-family: cabin;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
 
-.go-back-btn button:hover{
-    color: #6bc6ff;
+.go-back-btn button:hover {
+  color: #6bc6ff;
 }
 
 /* TOASTER ENDS */
 
 @media screen and (max-width: 1024px) {
+  /* ORDER LINK START*/
 
+  .order-link button {
+    padding: 13px 20px;
+    font: 18px prompt;
+  }
 
-    /* ORDER LINK START*/
+  /* ORDER LINK ENDS*/
 
-    .order-link button {
-        padding: 13px 20px;
-        font: 18px prompt;
-    }
+  /*  CONTACT FORM START*/
 
-    /* ORDER LINK ENDS*/
+  /* CONTACT LEFT STARRTS */
 
-    /*  CONTACT FORM START*/
+  .contact-left {
+    display: flex;
+    max-height: 800px;
+    width: 38vw;
+  }
 
-    /* CONTACT LEFT STARRTS */
+  .contact-left span h2 {
+    font: 24px prompt;
+    top: 180px;
+  }
 
-    .contact-left {
-        display: flex;
-        max-height: 800px;
-        width: 38vw;
-    }
+  .contact-left span p {
+    top: 240px;
+    font: 14px cabin;
+    line-height: 20px;
+  }
 
+  /* CONTACT LEFT ENDS */
 
-    .contact-left span h2 {
-        font: 24px prompt;
-        top: 180px;
-    }
+  h2 {
+    font: 23px "noto serif";
+    font-weight: 600;
+    top: -35px;
+    color: whitesmoke;
+  }
 
-    .contact-left span p {
-        top: 240px;
-        font: 14px cabin;
-        line-height: 20px;
-    }
+  label {
+    font: 16px prompt;
+    font-weight: 600;
+  }
 
-    /* CONTACT LEFT ENDS */
+  button {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 15px;
+    font-weight: 600;
+  }
 
-    h2 {
-        font: 23px "noto serif";
-        font-weight: 600;
-        top: -35px;
-        color: whitesmoke;
-    }
-
-    label {
-        font: 16px prompt;
-        font-weight: 600;
-    }
-
-
-    button {
-        width: 100%;
-        padding: 10px 0;
-        margin-top: 15px;
-        font-weight: 600;
-    }
-
-    /*  CONTACT FORM ENDS*/
-
+  /*  CONTACT FORM ENDS*/
 }
 
+@media screen and (max-width: 768px) {
+  /* ORDER LINK START*/
 
-@media screen and (max-width:768px) {
+  .order-link button {
+    padding: 10px 20px;
+    font: 15px prompt;
+    margin-top: -1px;
+  }
 
-    /* ORDER LINK START*/
+  /* ORDER LINK ENDS*/
 
-    .order-link button {
-        padding: 10px 20px;
-        font: 15px prompt;
-        margin-top: -1px;
-    }
+  .background-blur {
+    height: 170vh;
+  }
 
-    /* ORDER LINK ENDS*/
+  /*  CONTACT FORM START*/
 
+  /* CONTACT LEFT STARRTS */
 
-    .background-blur {
-        height: 170vh;
-    }
+  .contact-left {
+    display: flex;
+    height: 800px;
+    max-width: 38vw;
+  }
 
-    /*  CONTACT FORM START*/
+  .contact-left span h2 {
+    font: 18px prompt;
+    font-weight: 600;
+    top: 160px;
+  }
 
-    /* CONTACT LEFT STARRTS */
+  .contact-left span p {
+    text-align: justify;
+    top: 180px;
+    font: 13px cabin;
+    line-height: 18px;
+  }
 
-    .contact-left {
-        display: flex;
-        height: 800px;
-        max-width: 38vw;
-    }
+  /* CONTACT LEFT ENDS */
 
+  h2 {
+    font: 20px "noto serif";
+    font-weight: 600;
+  }
 
-    .contact-left span h2 {
-        font: 18px prompt;
-        font-weight: 600;
-        top: 160px;
-    }
+  .contact-form {
+    margin-bottom: 15px;
+  }
 
-    .contact-left span p {
-        text-align: justify;
-        top: 180px;
-        font: 13px cabin;
-        line-height: 18px;
-    }
+  label {
+    font: 13px prompt;
+    margin-bottom: 5px;
+  }
 
-    /* CONTACT LEFT ENDS */
+  .contact-form input {
+    font: 13px cabin;
+    padding: 6px 10px;
+  }
 
-    h2 {
-        font: 20px "noto serif";
-        font-weight: 600;
-    }
+  button {
+    margin-top: 20px;
+    font: 18px cabin;
+    font-weight: 600;
+  }
 
-    .contact-form {
-        margin-bottom: 15px;
-    }
-
-    label {
-        font: 13px prompt;
-        margin-bottom: 5px;
-    }
-
-    .contact-form input {
-        font: 13px cabin;
-        padding: 6px 10px;
-    }
-
-    button {
-        margin-top: 20px;
-        font: 18px cabin;
-        font-weight: 600;
-    }
-
-    /*  CONTACT FORM ENDS*/
-
+  /*  CONTACT FORM ENDS*/
 }
 
+@media screen and (max-width: 750px) {
+  /* ORDER LINK START*/
 
-@media screen and (max-width:750px) {
+  .order-link button {
+    padding: 10px 17px;
+    font: 15px prompt;
+  }
 
-    /* ORDER LINK START*/
+  /* ORDER LINK ENDS*/
 
-    .order-link button {
-        padding: 10px 17px;
-        font: 15px prompt;
-    }
+  .background-blur {
+    height: 170vh;
+  }
 
-    /* ORDER LINK ENDS*/
+  /*  CONTACT FORM START*/
 
-    .background-blur {
-        height: 170vh;
-    }
+  /* CONTACT LEFT STARRTS */
 
-    /*  CONTACT FORM START*/
+  .contact-left {
+    display: flex;
+    height: 800px;
+    max-width: 38vw;
+  }
 
+  .contact-left span h2 {
+    font: 18px prompt;
+    font-weight: 600;
+    top: 140px;
+  }
 
-    /* CONTACT LEFT STARRTS */
+  .contact-left span p {
+    text-align: justify;
+    top: 160px;
+    font: 13px cabin;
+    line-height: 18px;
+  }
 
-    .contact-left {
-        display: flex;
-        height: 800px;
-        max-width: 38vw;
-    }
+  /* CONTACT LEFT ENDS */
 
+  h2 {
+    font: 20px "noto serif";
+    font-weight: 600;
+  }
 
-    .contact-left span h2 {
-        font: 18px prompt;
-        font-weight: 600;
-        top: 140px;
-    }
+  .contact-form {
+    margin-bottom: 15px;
+  }
 
-    .contact-left span p {
-        text-align: justify;
-        top: 160px;
-        font: 13px cabin;
-        line-height: 18px;
-    }
+  label {
+    font: 13px prompt;
+    margin-bottom: 5px;
+  }
 
-    /* CONTACT LEFT ENDS */
+  .contact-form input {
+    font: 13px cabin;
+    padding: 6px 10px;
+  }
 
-    h2 {
-        font: 20px "noto serif";
-        font-weight: 600;
-    }
+  button {
+    margin-top: 20px;
+    font: 18px cabin;
+    font-weight: 600;
+  }
 
-    .contact-form {
-        margin-bottom: 15px;
-    }
-
-    label {
-        font: 13px prompt;
-        margin-bottom: 5px;
-    }
-
-    .contact-form input {
-        font: 13px cabin;
-        padding: 6px 10px;
-    }
-
-    button {
-        margin-top: 20px;
-        font: 18px cabin;
-        font-weight: 600;
-    }
-
-    /*  CONTACT FORM ENDS*/
-
+  /*  CONTACT FORM ENDS*/
 }
 
+@media screen and (max-width: 720px) {
+  /* ORDER LINK START*/
 
+  .order-link button {
+    padding: 10px 15px;
+    font: 13px prompt;
+  }
 
-@media screen and (max-width:720px) {
+  /* ORDER LINK ENDS*/
 
-    /* ORDER LINK START*/
+  .background-blur {
+    height: 170vh;
+  }
 
-    .order-link button {
-        padding: 10px 15px;
-        font: 13px prompt;
-    }
+  /*  CONTACT FORM START*/
 
-    /* ORDER LINK ENDS*/
+  /* CONTACT LEFT STARRTS */
 
-    .background-blur {
-        height: 170vh;
-    }
+  .contact-left {
+    display: flex;
+    height: 800px;
+    max-width: 38vw;
+  }
 
-    /*  CONTACT FORM START*/
+  .contact-left span h2 {
+    font: 18px prompt;
+    font-weight: 600;
+    top: 140px;
+  }
 
+  .contact-left span p {
+    text-align: justify;
+    top: 160px;
+    font: 13px cabin;
+    line-height: 18px;
+  }
 
-    /* CONTACT LEFT STARRTS */
+  /* CONTACT LEFT ENDS */
 
-    .contact-left {
-        display: flex;
-        height: 800px;
-        max-width: 38vw;
-    }
+  h2 {
+    font: 20px "noto serif";
+    font-weight: 600;
+  }
 
+  .contact-form {
+    margin-bottom: 15px;
+  }
 
-    .contact-left span h2 {
-        font: 18px prompt;
-        font-weight: 600;
-        top: 140px;
-    }
+  label {
+    font: 13px prompt;
+    margin-bottom: 5px;
+  }
 
-    .contact-left span p {
-        text-align: justify;
-        top: 160px;
-        font: 13px cabin;
-        line-height: 18px;
-    }
+  .contact-form input {
+    font: 13px cabin;
+    padding: 6px 10px;
+  }
 
-    /* CONTACT LEFT ENDS */
+  button {
+    margin-top: 20px;
+    font: 18px cabin;
+    font-weight: 600;
+  }
 
-    h2 {
-        font: 20px "noto serif";
-        font-weight: 600;
-    }
+  /*  CONTACT FORM ENDS*/
 
-    .contact-form {
-        margin-bottom: 15px;
-    }
+  /* LABEL INPUT ENDS*/
 
-    label {
-        font: 13px prompt;
-        margin-bottom: 5px;
-    }
+  /* TOASTER STARTS */
 
-    .contact-form input {
-        font: 13px cabin;
-        padding: 6px 10px;
-    }
+  .toast-icon {
+    display: flex;
+    margin: 0 auto;
+    font-size: 230px;
+    margin-bottom: 30px;
+  }
 
-    button {
-        margin-top: 20px;
-        font: 18px cabin;
-        font-weight: 600;
-    }
+  .toast {
+    font: 20px arial;
+  }
 
-    /*  CONTACT FORM ENDS*/
+  .notice {
+    top: -50px;
+    font: 18px arial;
+    left: 120px;
+  }
 
-    /* LABEL INPUT ENDS*/
+  .notify {
+    left: 200px;
+    top: -60px;
+    font: 18px Arial;
+  }
 
+  .go-back-btn button {
+    font-weight: 600;
+    left: 320px;
+  }
 
-    /* TOASTER STARTS */
-
-    .toast-icon {
-        display: flex;
-        margin: 0 auto;
-        font-size: 230px;
-        margin-bottom: 30px;
-    }
-
-    .toast {
-        font: 20px arial;
-    }
-
-
-    .notice {
-        top: -50px;
-        font: 18px arial;
-        left: 120px;
-    }
-
-    .notify {
-        left: 200px;
-        top: -60px;
-        font: 18px Arial;
-    }
-
-    .go-back-btn button {
-        font-weight: 600;
-        left: 320px;
-    }
-
-    /* TOASTER ENDS */
+  /* TOASTER ENDS */
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width: 430px) {
+  /* ORDER LINK START*/
 
-    /* ORDER LINK START*/
+  .order-link button {
+    padding: 10px 14px;
+    font: 12px prompt;
+  }
 
-    .order-link button {
-        padding: 10px 14px;
-        font: 12px prompt;
-    }
+  /* ORDER LINK ENDS*/
 
-    /* ORDER LINK ENDS*/
+  .background-blur {
+    height: 100%;
+  }
 
-    .background-blur {
-        height: 100%;
-    }
+  /*  CONTACT FORM START*/
 
-    /*  CONTACT FORM START*/
+  .contact-container {
+    top: 95px;
+    height: 570px;
+  }
 
-    .contact-container {
-        top: 95px;
-        height: 570px;
-    }
+  /* CONTACT LEFT STARRTS */
 
-    /* CONTACT LEFT STARRTS */
+  .contact-left {
+    display: none;
+  }
 
-    .contact-left {
-        display: none;
-    }
+  .contact-container form {
+    width: 90%;
+    height: 570px;
+    border-radius: 5px;
+  }
 
-    .contact-container form {
-        width: 90%;
-        height: 570px;
-        border-radius: 5px;
-    }
+  .contact-container form h2 {
+    position: relative;
+    top: -9px;
+  }
 
-    .contact-container form h2 {
-        position: relative;
-        top: -9px;
-    }
+  .contact-form {
+    position: relative;
+    top: -10px;
+    margin-bottom: 13px;
+  }
 
-    .contact-form {
-        position: relative;
-        top: -10px;
-        margin-bottom: 13px;
-    }
+  label {
+    font: 13px prompt;
+    margin-bottom: 5px;
+  }
 
-    label {
-        font: 13px prompt;
-        margin-bottom: 5px;
-    }
+  .contact-form input {
+    font: 10px cabin;
+    padding: 4px 8px;
+  }
 
-    .contact-form input {
-        font: 10px cabin;
-        padding: 4px 8px;
-    }
+  small.error {
+    font: 10px cabin;
+  }
 
-    small.error {
-        font: 10px cabin;
-    }
+  .package label {
+    font-size: 9.7px;
+    position: relative;
+    top: 6px;
+  }
 
-    .package label {
-        font-size: 9.7px;
-        position: relative;
-        top: 6px;
-    }
+  button {
+    margin-top: 35px;
+    font: 12px cabin;
+    font-weight: 600;
+  }
 
-    button {
-        margin-top: 35px;
-        font: 12px cabin;
-        font-weight: 600;
-    }
+  /*  CONTACT FORM ENDS*/
 
+  /* TOASTER STARTS */
 
-    /*  CONTACT FORM ENDS*/
-
-
-/* TOASTER STARTS */
-
-main .toast {
+  main .toast {
     font: 20px prompt;
-}
+  }
 
-.notify,
-.notice {
+  .notify,
+  .notice {
     font: 13px arial;
     margin: -5px 0;
+  }
+
+  .go-back-btn button {
+    margin: -10px 0;
+  }
+
+  /* TOASTER ENDS */
 }
 
-.go-back-btn button {
-    margin: -10px  0;
-}
+@media screen and (max-width: 400px) {
+  /* ORDER LINK START*/
 
-/* TOASTER ENDS */
+  .order-link button {
+    padding: 10px 12px;
+    font: 10px prompt;
+  }
 
+  /* ORDER LINK ENDS*/
 
-}
+  .background-blur {
+    max-height: 100%;
+  }
 
+  .contact-container {
+    top: 20px;
+    height: 580px;
+  }
 
-@media screen and (max-width:400px) {
+  /*  CONTACT FORM START*/
 
+  .contact-left {
+    display: none;
+  }
 
-    /* ORDER LINK START*/
+  .contact-container form h2 {
+    font: 12.5px "noto serif";
+    font-weight: 600;
+    position: relative;
+    top: 5px;
+  }
 
-    .order-link button {
-        padding: 10px 12px;
-        font: 10px prompt;
-    }
+  .contact-container form {
+    width: 90%;
+    height: 547px;
+  }
 
-    /* ORDER LINK ENDS*/
+  .contact-form {
+    margin-bottom: 15px;
+  }
 
-    .background-blur {
-        max-height: 100%;
-    }
+  label {
+    font: 13px prompt;
+    margin-bottom: 5px;
+  }
 
-    .contact-container {
-        top: 20px;
-        height: 580px;
-    }
+  .contact-form input {
+    font: 9px cabin;
+    padding: 5px 10px;
+  }
 
-    /*  CONTACT FORM START*/
+  .package label {
+    font-size: 8.6px;
+  }
 
-    .contact-left {
-        display: none;
-    }
+  button {
+    margin-top: 100px;
+    font: 12px cabin;
+    font-weight: 600;
+  }
 
-    .contact-container form h2 {
-        font: 12.5px "noto serif";
-        font-weight: 600;
-        position: relative;
-        top: 5px;
-    }
+  /*  CONTACT FORM ENDS*/
 
-    .contact-container form {
-        width: 90%;
-        height: 547px;
-    }
+  /* TOASTER STARTS */
 
-    .contact-form {
-        margin-bottom: 15px;
-    }
-
-    label {
-        font: 13px prompt;
-        margin-bottom: 5px;
-    }
-
-    .contact-form input {
-        font: 9px cabin;
-        padding: 5px 10px;
-    }
-
-    .package label {
-        font-size: 8.6px;
-    }
-
-    button {
-        margin-top: 100px;
-        font: 12px cabin;
-        font-weight: 600;
-    }
-
-    /*  CONTACT FORM ENDS*/
-
-    
-/* TOASTER STARTS */
-
-main .toast {
+  main .toast {
     font: 20px prompt;
-}
+  }
 
-.notify,
-.notice {
+  .notify,
+  .notice {
     font: 13px arial;
-}
+  }
 
-
-.go-back-btn button {
+  .go-back-btn button {
     font-size: 19px;
     margin-top: -10px;
-}
+  }
 
-/* TOASTER ENDS */
-
+  /* TOASTER ENDS */
 }
